@@ -16,7 +16,7 @@ import { usePurchaseMutation } from '../../services/api'
 import * as S from './styled'
 import { RootReducer } from '../../store'
 import { formatPrice, getTotalPrice } from '../../utils'
-//import { clear } from '../../store/reducers/cart'
+import { clear } from '../../store/reducers/cart'
 
 type Installment = {
   quantity: number

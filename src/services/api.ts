@@ -29,7 +29,7 @@ type PurchasePayload = {
       }
       code?: number
     }
-    installment: number
+    installments: number
   }
 }
 type PurchaseResponse = {
