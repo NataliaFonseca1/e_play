@@ -31,7 +31,7 @@ const Cart = () => {
   return (
     <S.CartContainer className={isOpen ? 'is-open' : ''}>
       <S.Overlay onClick={closeCart} />
-      <S.SideBar>
+      <S.Sidebar>
         {items.length > 0 ? (
           <>
             <ul>
@@ -66,7 +66,7 @@ const Cart = () => {
             O carrinho está vazio, adicione seu jogo antes de prosseguir
           </p>
         )}
-      </S.SideBar>
+      </S.Sidebar>
     </S.CartContainer>
   )
 }

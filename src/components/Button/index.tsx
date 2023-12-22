@@ -26,6 +26,7 @@ const Button = ({
         type={type}
         title={title}
         onClick={onClick}
+        disabled={disabled}
       >
         {children}
       </ButtonContainer>
