@@ -3,7 +3,7 @@ import { colors } from '../../styles'
 import { HashLink } from 'react-router-hash-link'
 
 export const Container = styled.footer`
-  background-color: ${colors.white};
+  background-color: ${colors.gray};
   padding: 32px 0;
   font-size: 14px;
   margin-top: 40px;
