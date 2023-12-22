@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import Section from '../components/Section'
-import { Action, Item, Items, Modal, ModalContent } from './styles'
 import play from '../assets/images/play.png'
 import zoom from '../assets/images/zoom.png'
 import close from '../assets/images/fechar.png'
+import { Action, Item, Items, Modal, ModalContent } from './styles'
 
 import { GalleryItem } from '../pages/Home'
 
@@ -66,17 +66,11 @@ const Gallery = ({ defaultCover, name, items }: Props) => {
           ))}
         </Items>
       </Section>
-      <Modal className={modal.isVisible ? 'visivel' : ''}>
+      <Modal className={modal.isVisible ? 'is-visible' : ''}>
         <ModalContent className="container">
           <header>
             <h4>{name}</h4>
-            <img
-              src={close}
-              alt="Ícone de fechar"
-              onClick={() => {
-                closeModal()
-              }}
-            />
+            <img src={close} alt="Ícone de fechar" onClick={closeModal} />
           </header>
           {modal.type === 'image' ? (
             <img src={modal.url} />

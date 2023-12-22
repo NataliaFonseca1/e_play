@@ -1,7 +1,7 @@
-import { TypeFormatFlags } from 'typescript'
 import { Game } from '../../pages/Home'
 import Product from '../Product'
 import { Container, List } from './styles'
+import { formatPrice } from '../../utils'
 
 export type Props = {
   title: string
@@ -10,12 +10,6 @@ export type Props = {
   id?: string
 }
 
-export const formatPrice = (price = 0) => {
-  return new Intl.NumberFormat('pt-BR', {
-    style: 'currency',
-    currency: 'BRL'
-  }).format(price)
-}
 const ProductsList = ({ background, title, games, id }: Props) => {
   const getGameTags = (game: Game) => {
     const tags = []
